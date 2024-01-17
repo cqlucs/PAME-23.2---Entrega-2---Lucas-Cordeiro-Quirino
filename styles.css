@@ -1,0 +1,261 @@
+/* Aplicar em tudo */
+
+body {
+    background-image: linear-gradient(to bottom, rgba(60, 60, 60, 0.7), rgba(0, 0, 0, 0.95)), url("fundofluxo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: Arial;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(45, 45, 45, 255);
+    padding: 2vh;
+    color: white;
+}
+
+.gitfluxofulllogo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 25vh;
+}
+
+#gitfluxologotxt {
+    padding-right: 5vh;
+}
+
+#githublogo {
+    width: 80%;
+    height: 80%;
+    margin: 0;
+    border-radius: 50%;
+}
+
+h1 {
+    text-decoration: underline;
+    margin: 0;
+    font-weight: normal;
+    font-size: 2em;
+}
+    
+h2 {
+    padding-left: 25vh;
+    margin: 0;
+    font-weight: normal;
+    font-size: 2em;
+}
+
+/* Main */
+  
+main {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    display: block
+}
+
+.signboard {
+    width: 80%;
+    background-color: rgb(45, 45, 45);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 500px;
+    border-radius: 10px;
+  }
+  
+input {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    min-width: 200px;
+    min-height: 30px;
+    max-height: 40px;
+    height: 6vh;
+    background-color:  rgb(36, 36, 36);
+    border: 1px solid  rgb(36, 36, 36);
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+button {
+    display: block;
+    background-color: rgb(36, 36, 36);
+    border: 1px solid rgb(36, 36, 36);
+    color: white;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 80%;
+    min-width: 200px;
+    min-height: 30px;
+    height: 6vh;
+    max-height: 40px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+#signconfirmation {
+    display: none;
+    color: rgb(0,249,25);
+    text-align: center;
+}
+
+#forgottext {
+    color: rgb(18,85,163);
+    text-align: left;
+    padding-left: 7em;
+}
+
+::placeholder {
+    padding-left: 2vh;
+    color: rgb(200, 200, 200)
+}
+
+#passwordtxts{
+    display: inline-block;
+    padding-left: 10%;
+    padding-top: 5vh;
+    padding-bottom: .5vh;
+}
+
+#useremailguidetext {
+    display: block;
+    padding-left: 10%;
+    padding-top: 2vh;
+    padding-bottom: .5vh;
+}
+
+#signinbutton {
+    background-color: rgb(0,249,25);
+}
+  
+.inline {
+    display: inline;
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+.buttontext {
+    display: inline;
+    align-items: center;
+    padding-left: 2vh;
+}
+
+.buttoncontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+#signboardtitle {
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+#ordivision {
+    text-align: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.switchtext {
+    padding-left: 10vh;
+}
+
+/* Footer */
+
+.footer {
+    color: rgba(100, 100, 100,255);
+    font-weight: bold;
+    margin-top: auto;
+    padding-bottom: 5vh;
+}
+
+.footertxts {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70%;
+}
+
+#ftopt {
+    padding-right: 2.5vh;
+    padding-left: 2.5vh;
+}
+
+/* Switch */
+.toggle {
+	cursor: pointer;
+	display: inline-block;
+    padding-left: 10%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+.toggle-switch {
+	display: inline-block;
+	background: #ccc;
+	border-radius: 16px;
+	width: 58px;
+	height: 32px;
+	position: relative;
+	vertical-align: middle;
+	transition: background 0.25s;
+	&:before,
+	&:after {
+		content: "";
+	}
+	&:before {
+		display: block;
+		background: linear-gradient(to bottom, white 0%,white 100%);
+		border-radius: 50%;
+		box-shadow: 0 0 0 1px rgba(0,0,0,0.25);
+		width: 24px;
+		height: 24px;
+		position: absolute;
+		top: 4px;
+		left: 4px;
+		transition: left 0.25s;
+	}
+	.toggle:hover &:before {
+		background: linear-gradient(to bottom, white 0%,white 100%);
+		box-shadow: 0 0 0 1px rgba(0,0,0,0.5);
+	}
+	.toggle-checkbox:checked + & {
+		background: rgb(0,249,25);
+		&:before {
+			left: 30px;
+		}
+	}
+}
+.toggle-checkbox {
+	position: absolute;
+	visibility: hidden;
+}
+.toggle-label {
+	margin-left: 5px;
+	position: relative;
+	top: 2px;
+}

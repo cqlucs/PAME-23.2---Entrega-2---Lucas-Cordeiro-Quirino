@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Gitfluxo</title>
+
+    <script src="back.js"></script>
+</head>
+<body>
+    <!-- Parte da cabeça da página /// header -->
+    <header class="header">
+        <span class="gitfluxofulllogo">
+        <h1 id="gitfluxologotxt">GitFluxo</h1>
+        <img src="image 2.png" id="githublogo"></span>
+        <h2>Let's build from here</h2>
+    </header>
+
+    <!-- Parte do meio da página /// main -->
+    <main class="main">
+        <h3 id="signboardtitle">Sign in to GitFluxo</h3>
+        <div class="signboard">
+        <!-- Usuário/email -->
+        <label for="useroremail" id="useremailguidetext">Username or email adress</label>
+        <input id="useroremail" placeholder="username or email adress">
+        <!-- Senha -->
+        <span id="passwordtxts"><label for="password"><p class="inline" id="passwordguidetxt">Password</p></label><p class="inline" id="forgottext">Forgot password?</p></span>
+        <input placeholder="password" type="password" id="password">
+        <!-- Barra para lembrar da senha -->
+        <label class="toggle">
+            <input class="toggle-checkbox" type="checkbox" id="lembrar">
+            <div class="toggle-switch"></div>
+            <span class="toggle-label">remember me</span>
+        </label>
+        <button id="signinbutton" onclick="signinfinish()">Sign In</button>
+        <p id="signconfirmation">Sucess!</p>
+        <p id="ordivision">or</p>
+        <!-- Botão continuar com google -->
+        <button>
+            <span class="buttoncontent"><img src="image 4.png"><div class="buttontext">Continue with Google</div></span>
+        </button>
+        <!-- Botão continuar com Facebook -->
+        <button>
+            <span class="buttoncontent"><img src="image 3.png"><div class="buttontext">Continue with Facebook</div></span>
+        </button>
+        </div>
+    </main>
+
+    <!-- Parte do pé da página /// footer -->
+    <footer class="footer">
+        <div class="footertxts">
+        <p id="ftopt">Terms</p>
+        <p id="ftopt">Privacy</p>
+        <p id="ftopt">Docs</p>
+        <p id="ftopt">Contact GitFluxo Support</p>
+        <p id="ftopt">Do not share my personal information</p>
+        </div>
+    </footer>
+</body>
+</html>
