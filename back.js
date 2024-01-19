@@ -11,6 +11,6 @@ function signinfinish() {
     }
     const avisosucesso = document.getElementById("signconfirmation");
     avisosucesso.style.display = "block";
-    const textoaviso = "Cadastro realizado com sucesso!\nUsuário:"+username+"\nSenha:"+senha+"\nLembrar:"+lembraremos;
+    const textoaviso = "Cadastro realizado com sucesso!\nUsuário: "+username+"\nSenha: "+senha+"\nLembrar: "+lembraremos;
     alert(textoaviso);
 }
